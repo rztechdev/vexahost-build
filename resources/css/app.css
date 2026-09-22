@@ -5,21 +5,27 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
-/* RZ Digital Creative Theme Tokens */
+/* VexaHost Theme Tokens */
 @theme {
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --font-fraunces: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
     
-    /* RZ Brand Colors */
-    --color-rz-primary: #A2B187;
-    --color-rz-deep: #8B9B70;
-    --color-rz-deep-hover: #7A8A60;
-    --color-rz-cream: #F9F8F3;
-    --color-rz-cream-subtle: #F2F0E6;
+    /* VexaHost Brand Colors (Warm Premium Orange Spectrum) */
+    --color-rz-primary: #FB923C;
+    --color-rz-deep: #EA580C;
+    --color-rz-deep-hover: #C2410C;
+    --color-rz-cream: #FFFBF7;
+    --color-rz-cream-subtle: #FFF7ED;
     --color-rz-charcoal: #2E2E2A;
     --color-rz-charcoal-muted: #595952;
     --color-rz-charcoal-dark: #22221E;
+
+    --color-vh-primary: #FB923C;
+    --color-vh-deep: #EA580C;
+    --color-vh-deep-hover: #C2410C;
+    --color-vh-cream: #FFFBF7;
+    --color-vh-cream-subtle: #FFF7ED;
 }
 
 [x-cloak] {
@@ -41,7 +47,7 @@ html.dark body {
 }
 
 /* ==========================================================================
-   RZ DIGITAL CREATIVE - SIGNATURE DESIGN UTILITIES & ANIMATIONS
+   VEXAHOST - SIGNATURE DESIGN UTILITIES & ANIMATIONS
    ========================================================================== */
 
 /* Folded-Corner Paper Ribbon Effect for Cards */
@@ -57,7 +63,7 @@ html.dark body {
     right: 0;
     width: 28px;
     height: 28px;
-    background: linear-gradient(135deg, transparent 50%, rgba(0, 0, 0, 0.12) 50%, rgba(0, 0, 0, 0.08) 55%, var(--tw-fold-color, #8B9B70) 56%);
+    background: linear-gradient(135deg, transparent 50%, rgba(0, 0, 0, 0.12) 50%, rgba(0, 0, 0, 0.08) 55%, var(--tw-fold-color, #EA580C) 56%);
     border-bottom-left-radius: 4px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.06);
     pointer-events: none;
@@ -65,11 +71,12 @@ html.dark body {
 }
 
 .rz-fold-cream-tr {
-    --tw-fold-color: #ECEAE0;
+    --tw-fold-color: #FFEDD5;
 }
 
+.rz-fold-orange-tr,
 .rz-fold-sage-tr {
-    --tw-fold-color: #7D8D63;
+    --tw-fold-color: #C2410C;
 }
 
 /* Subtle Ribbon Float Animation for Hero & Visuals */
@@ -103,7 +110,7 @@ html.dark body {
 
 /* Accessible focus ring for interactive elements */
 .rz-focus-ring:focus-visible {
-    outline: 2px solid #8B9B70;
+    outline: 2px solid #EA580C;
     outline-offset: 3px;
 }
 
@@ -206,15 +213,15 @@ html.dark body {
 .rz-card-3d:hover {
     box-shadow: 
         0 20px 35px -10px rgba(46, 46, 42, 0.14),
-        0 10px 20px -5px rgba(139, 155, 112, 0.15) !important;
-    border-color: rgba(139, 155, 112, 0.5) !important;
+        0 10px 20px -5px rgba(234, 88, 12, 0.18) !important;
+    border-color: rgba(234, 88, 12, 0.5) !important;
 }
 
 .dark .rz-card-3d:hover {
     box-shadow: 
         0 25px 45px -12px rgba(0, 0, 0, 0.75),
-        0 0 25px rgba(139, 155, 112, 0.2) !important;
-    border-color: rgba(162, 177, 135, 0.4) !important;
+        0 0 25px rgba(234, 88, 12, 0.25) !important;
+    border-color: rgba(251, 146, 60, 0.4) !important;
 }
 
 /* 3D Pop for inner elements like icons & badges */

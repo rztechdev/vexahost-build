@@ -1,14 +1,14 @@
-# RZ Digital Creative (rz-about)
+# vexahost-build
 
-Website resmi profil dan layanan digital agensi **RZ Digital Creative** — Solusi pembuatan website profesional, estetik, dan terjangkau khusus UMKM Indonesia.
+Website resmi profil dan layanan pembuatan website **VexaHost** — Solusi cloud hosting, VPS, domain, dan pembuatan website profesional, estetik, dan terjangkau khusus UMKM & bisnis Indonesia.
 
-- **Domain Utama**: [https://rzdigitalcreative.my.id](https://rzdigitalcreative.my.id)
-- **Portal Klien**: [https://portalclient.rzdigitalcreative.my.id](https://portalclient.rzdigitalcreative.my.id)
+- **Domain Utama**: [https://build.vexahostcloud.my.id](https://build.vexahostcloud.my.id)
+- **Portal Cloud**: [https://vexahostcloud.my.id](https://vexahostcloud.my.id)
 
 ---
 
 ## 🚀 Fitur Utama
-- **Modern Responsive Design**: Desain elegan bernuansa Sage Green & Cream dengan tipografi tajam Inter & JetBrains Mono.
+- **Modern Responsive Design**: Desain elegan bernuansa VexaHost Orange & Charcoal dengan tipografi tajam Inter & JetBrains Mono.
 - **Dark Mode Support**: Mode gelap dan terang yang tersinkronisasi otomatis dengan preferensi sistem / local storage.
 - **Interactive 3D Cards**: Efek hover 3D tilt yang responsif mengikuti gerakan kursor dengan pantulan cahaya dinamis (*specular glare*).
 - **Layanan Lengkap**:
@@ -16,7 +16,7 @@ Website resmi profil dan layanan digital agensi **RZ Digital Creative** — Solu
   - Company Profile Bisnis (5 Halaman)
   - Toko Online & Kasir POS Web
   - Redesain Website & Optimasi SEO
-- **Konsultasi Cepat**: Terintegrasi langsung dengan WhatsApp Business (`+62 851-5169-9883`) & Email resmi (`rzcompanyidn@gmail.com`).
+- **Konsultasi Cepat**: Terintegrasi langsung dengan WhatsApp Business (`+62 858-0874-9131`) & Email resmi (`vexahostcloudtech@gmail.com`).
 
 ---
 
@@ -31,11 +31,8 @@ Website resmi profil dan layanan digital agensi **RZ Digital Creative** — Solu
 ## 📦 Instalasi & Menjalankan Lokal
 
 ```bash
-# Clone repository
-git clone https://github.com/rztechdev/rz-about.git
-
 # Masuk ke direktori
-cd rz-about
+cd "rz - about"
 
 # Install PHP dependencies
 composer install
@@ -58,4 +55,4 @@ php artisan serve
 
 ---
 
-&copy; 2026 RZ Digital Creative. All rights reserved.
+&copy; 2026 VexaHost. All rights reserved.

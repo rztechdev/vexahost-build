@@ -11,7 +11,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        // Percaya header proxy (ngrok / cPanel di belakang proxy) agar HTTPS & host terdeteksi benar.
+        // Percaya header proxy (reverse proxy / load balancer / SSL termination) agar HTTPS & host terdeteksi benar.
         $middleware->trustProxies(at: '*');
     })
     ->withExceptions(function (Exceptions $exceptions): void {

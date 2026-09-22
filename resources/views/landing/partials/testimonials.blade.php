@@ -6,18 +6,18 @@
     | CATATAN: Ini adalah contoh testimoni untuk mengisi tampilan. Ganti dengan
     | ulasan ASLI dari pelanggan Anda begitu tersedia.
     |
-    | Konsep konten mengikuti positioning RZ Digital Creative saat ini:
+    | Konsep konten mengikuti positioning VexaHost saat ini:
     | jasa pembuatan website profesional & terjangkau khusus UMKM Indonesia.
     */
 
-    // Tombol "Tulis review kamu" mengarah ke WhatsApp (channel utama RZ).
-    $reviewWaUrl = 'https://wa.me/6285151699883?text=' . rawurlencode('Halo RZ Digital Creative, saya ingin memberikan review/testimoni pengalaman saya bekerja sama dengan tim RZ.');
+    // Tombol "Tulis review kamu" mengarah ke WhatsApp (channel utama VexaHost).
+    $reviewWaUrl = 'https://wa.me/6285808749131?text=' . rawurlencode('Halo VexaHost, saya ingin memberikan review/testimoni pengalaman saya bekerja sama dengan tim VexaHost.');
 
     $testimonials = [
         [
             'name'   => 'Dewi Lestari',
             'role'   => 'Pemilik Butik Online',
-            'color'  => 'bg-[#8B9B70]',
+            'color'  => 'bg-[#EA580C]',
             'quote'  => 'Website toko saya rampung hanya dalam 7 hari dan tampilannya rapi banget. Sekarang pelanggan tinggal lihat katalog di web, tidak perlu tanya harga satu-satu lewat DM. Order jadi lebih ramai!',
         ],
         [
@@ -67,7 +67,7 @@
 
         <!-- Section Header -->
         <div class="rz-reveal-up text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#A2B187]/15 text-[#8B9B70] dark:text-[#A2B187] text-[11px] font-bold uppercase tracking-wider mb-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FB923C]/15 text-[#EA580C] dark:text-[#FB923C] text-[11px] font-bold uppercase tracking-wider mb-3">
                 <span class="material-symbols-outlined text-[14px]">favorite</span>
                 Kata Mereka
             </span>
@@ -109,8 +109,8 @@
                                 <div class="text-[10px] sm:text-[11px] text-[#595952] dark:text-zinc-500 truncate">{{ $t['role'] }}</div>
                             </div>
                         </div>
-                        <span class="shrink-0 inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold text-[#8B9B70] dark:text-[#A2B187]"
-                              title="Testimoni asli dari pelanggan RZ Digital Creative">
+                        <span class="shrink-0 inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold text-[#EA580C] dark:text-[#FB923C]"
+                              title="Testimoni asli dari pelanggan VexaHost">
                             <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M12 1l2.4 2.4 3.3-.6.6 3.3L21 9.6 18.9 12 21 14.4l-2.7 1.5-.6 3.3-3.3-.6L12 21l-2.4-2.4-3.3.6-.6-3.3L3 14.4 5.1 12 3 9.6l2.7-1.5.6-3.3 3.3.6L12 1zm-1.2 13.2l4.9-4.9-1.3-1.3-3.6 3.6-1.6-1.6-1.3 1.3 2.9 2.9z"/>
                             </svg>
@@ -124,12 +124,12 @@
         <!-- Write a Review CTA -->
         <div class="rz-reveal-up text-center mt-10 sm:mt-14">
             <a href="{{ $reviewWaUrl }}" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#8B9B70] to-[#A2B187] hover:from-[#7A8A60] hover:to-[#8B9B70] text-white text-sm font-bold shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 rz-focus-ring">
+               class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#EA580C] to-[#FB923C] hover:from-[#C2410C] hover:to-[#EA580C] text-white text-sm font-bold shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 rz-focus-ring">
                 Tulis review kamu
                 <span class="material-symbols-outlined text-[18px]">rate_review</span>
             </a>
             <p class="text-[11px] text-[#595952] dark:text-zinc-500 mt-3">
-                Sudah pernah bekerja sama dengan kami? Bagikan pengalamanmu via WhatsApp 💚
+                Sudah pernah bekerja sama dengan kami? Bagikan pengalamanmu via WhatsApp 🧡
             </p>
         </div>
 

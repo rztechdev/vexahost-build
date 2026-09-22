@@ -6,8 +6,8 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="rz-reveal-scale rz-card-3d bg-white dark:bg-zinc-900 rounded-2xl p-5 sm:p-7 border border-zinc-200 dark:border-zinc-800 shadow-sm flex flex-col md:flex-row items-center justify-between gap-5 text-center md:text-left">
             <div class="flex items-center gap-3.5">
-                <div class="w-10 h-10 rounded-xl bg-[#8B9B70] text-white flex items-center justify-center text-lg shrink-0 shadow-xs rz-3d-pop">
-                    🌱
+                <div class="w-10 h-10 rounded-xl bg-[#EA580C] text-white flex items-center justify-center text-lg shrink-0 shadow-xs rz-3d-pop">
+                    🚀
                 </div>
                 <div>
                     <h4 class="font-fraunces text-base sm:text-lg font-bold text-[#2E2E2A] dark:text-zinc-100">
@@ -19,10 +19,10 @@
                 </div>
             </div>
             <a 
-                href="https://wa.me/6285151699883?text=Halo%20RZ%20Digital,%20saya%20mau%20klaim%20penawaran%20perdana%20pembuatan%20website%20UMKM."
+                href="https://wa.me/6285808749131?text=Halo%20VexaHost,%20saya%20mau%20klaim%20penawaran%20perdana%20pembuatan%20website%20UMKM."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="shrink-0 px-6 py-3 rounded-xl bg-[#8B9B70] hover:bg-[#7A8A60] text-white text-xs sm:text-sm font-bold shadow-sm hover:shadow transition-all duration-200 active:scale-95 rz-focus-ring"
+                class="shrink-0 px-6 py-3 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white text-xs sm:text-sm font-bold shadow-sm hover:shadow transition-all duration-200 active:scale-95 rz-focus-ring"
             >
                 Klaim Promo Perdana WA →
             </a>

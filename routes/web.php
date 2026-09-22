@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes - RZ Digital Creative Company Profile Landing Page
+| Web Routes - VexaHost Company Profile Landing Page
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -14,23 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('rz-digital.index');
+    return view('landing.index');
 })->name('home');
 
 Route::get('/company-profile', function () {
-    return view('rz-digital.index');
+    return view('landing.index');
 })->name('company-profile');
 
-Route::get('/rz-digital', function () {
-    return view('rz-digital.index');
-})->name('rz-digital');
+Route::get('/vexahost', function () {
+    return view('landing.index');
+})->name('vexahost');
 
 /*
 |--------------------------------------------------------------------------
 | SEO: sitemap.xml
 |--------------------------------------------------------------------------
 | Dilayani lewat Laravel supaya URL selalu ikut APP_URL (http/https, domain).
-| Daftarkan https://rzdigitalcreative.my.id/sitemap.xml di Google Search Console.
+| Daftarkan https://build.vexahostcloud.my.id/sitemap.xml di Google Search Console.
 */
 Route::get('/sitemap.xml', function () {
     $lastmod = now()->toAtomString();

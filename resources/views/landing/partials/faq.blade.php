@@ -18,16 +18,16 @@
         <div class="space-y-3 sm:space-y-4">
             
             <!-- Item 1 -->
-            <div class="rz-reveal-up rz-delay-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#8B9B70]/50 transition-all duration-200">
+            <div class="rz-reveal-up rz-delay-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 1 ? null : 1)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B9B70] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
                     :aria-expanded="active === 1"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">
                         Apakah bisa bayar bertahap atau dicicil?
                     </span>
-                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 1 ? 'rotate-180 bg-[#8B9B70] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
+                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 1 ? 'rotate-180 bg-[#EA580C] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
                         <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
                         </svg>
@@ -46,16 +46,16 @@
             </div>
 
             <!-- Item 2 -->
-            <div class="rz-reveal-up rz-delay-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#8B9B70]/50 transition-all duration-200">
+            <div class="rz-reveal-up rz-delay-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 2 ? null : 2)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B9B70] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
                     :aria-expanded="active === 2"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">
                         Berapa lama proses pengerjaan website?
                     </span>
-                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 2 ? 'rotate-180 bg-[#8B9B70] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
+                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 2 ? 'rotate-180 bg-[#EA580C] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
                         <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
                         </svg>
@@ -74,16 +74,16 @@
             </div>
 
             <!-- Item 3 -->
-            <div class="rz-reveal-up rz-delay-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#8B9B70]/50 transition-all duration-200">
+            <div class="rz-reveal-up rz-delay-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 3 ? null : 3)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B9B70] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
                     :aria-expanded="active === 3"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">
                         Apakah saya perlu paham teknis untuk mengelola website nanti?
                     </span>
-                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 3 ? 'rotate-180 bg-[#8B9B70] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
+                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 3 ? 'rotate-180 bg-[#EA580C] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
                         <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
                         </svg>
@@ -102,16 +102,16 @@
             </div>
 
             <!-- Item 4 -->
-            <div class="rz-reveal-up rz-delay-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#8B9B70]/50 transition-all duration-200">
+            <div class="rz-reveal-up rz-delay-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 4 ? null : 4)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B9B70] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
                     :aria-expanded="active === 4"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">
                         Bagaimana kalau saya belum yakin apakah usaha saya butuh website?
                     </span>
-                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 4 ? 'rotate-180 bg-[#8B9B70] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
+                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 4 ? 'rotate-180 bg-[#EA580C] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
                         <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
                         </svg>
@@ -130,16 +130,16 @@
             </div>
 
             <!-- Item 5 -->
-            <div class="rz-reveal-up rz-delay-5 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#8B9B70]/50 transition-all duration-200">
+            <div class="rz-reveal-up rz-delay-5 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 5 ? null : 5)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B9B70] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
                     :aria-expanded="active === 5"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">
                         Apakah ada biaya bulanan setelah website jadi?
                     </span>
-                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 5 ? 'rotate-180 bg-[#8B9B70] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
+                    <span class="w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300" :class="active === 5 ? 'rotate-180 bg-[#EA580C] text-white' : 'bg-zinc-100 dark:bg-zinc-800 text-[#2E2E2A] dark:text-zinc-300'">
                         <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
                         </svg>

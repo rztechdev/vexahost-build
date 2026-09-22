@@ -4,20 +4,19 @@
     | SEO source of truth — ubah di sini saja, semua tag ikut menyesuaikan.
     |----------------------------------------------------------------------
     */
-    $siteName  = 'RZ Digital Creative';
-    $seoTitle  = $seoTitle ?? 'Jasa Pembuatan Website UMKM Murah & Profesional | RZ Digital Creative';
-    $seoDesc   = $seoDesc ?? 'Jasa pembuatan website profesional untuk UMKM Indonesia. Landing Page, Company Profile, sampai Toko Online + Kasir POS. Mulai Rp 499.000, selesai 2-6 hari kerja.';
+    $siteName  = 'VexaHost';
+    $seoTitle  = $seoTitle ?? 'VexaHost - Jasa Website';
+    $seoDesc   = $seoDesc ?? 'Jasa pembuatan website profesional untuk UMKM Indonesia bersama VexaHost. Landing Page, Company Profile, sampai Toko Online + Kasir POS. Mulai Rp 499.000, selesai 2-6 hari kerja.';
     $ogImage   = asset('images/og-image.png');
     $logoUrl   = asset('images/favicon-512x512.png');
-    $waNumber  = '+6285151699883';
-    $email     = 'rzcompanyidn@gmail.com';
-    $instagram = 'https://instagram.com/rzdigitalcreative.id';
+    $waNumber  = '+6285808749131';
+    $email     = 'vexahostcloudtech@gmail.com';
 
     $homeUrl = rtrim(route('home'), '/') . '/';
     $orgId   = $homeUrl . '#organization';
     $siteId  = $homeUrl . '#website';
 
-    // Semua route (/, /company-profile, /rz-digital) menampilkan konten yang sama,
+    // Semua route (/, /company-profile, /vexahost) menampilkan konten yang sama,
     // jadi canonical selalu diarahkan ke beranda agar tidak dianggap duplikat.
     $canonical = $canonical ?? $homeUrl;
 
@@ -40,7 +39,7 @@
             '@type' => 'ProfessionalService',
             '@id' => $orgId,
             'name' => $siteName,
-            'alternateName' => 'RZ Digital',
+            'alternateName' => ['VexaHost Cloud', 'VexaHost Digital', 'vexahost'],
             'url' => $homeUrl,
             'logo' => ['@type' => 'ImageObject', 'url' => $logoUrl, 'width' => 512, 'height' => 512],
             'image' => $ogImage,
@@ -55,7 +54,7 @@
             'address' => ['@type' => 'PostalAddress', 'addressCountry' => 'ID'],
             'areaServed' => ['@type' => 'Country', 'name' => 'Indonesia'],
             'knowsLanguage' => 'id-ID',
-            'sameAs' => [$instagram],
+            'sameAs' => ['https://vexahostcloud.my.id', 'https://wa.vexahostcloud.my.id'],
             'hasOfferCatalog' => [
                 '@type' => 'OfferCatalog',
                 'name' => 'Paket Pembuatan Website UMKM',
@@ -125,7 +124,7 @@
 <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="{{ $siteName }}">
 <meta name="geo.region" content="ID">
-<meta name="theme-color" content="#A2B187">
+<meta name="theme-color" content="#EA580C">
 <link rel="alternate" hreflang="id-ID" href="{{ $canonical }}">
 <link rel="alternate" hreflang="x-default" href="{{ $canonical }}">
 
@@ -136,9 +135,11 @@
 @endif
 
 {{-- ============ Favicon & Brand Icons ============ --}}
-<link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
+<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon-16x16.png') }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png') }}">
 <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('images/favicon-48x48.png') }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicon-96x96.png') }}">
 <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('images/favicon-192x192.png') }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.png') }}">
 <link rel="manifest" href="{{ asset('manifest.json') }}">
