@@ -4,17 +4,28 @@
     | SEO source of truth — ubah di sini saja, semua tag ikut menyesuaikan.
     |----------------------------------------------------------------------
     */
-    $siteName  = 'VexaHost';
-    $seoTitle  = $seoTitle ?? 'VexaHost - Jasa Website';
+    $siteName  = 'VexaHost Build';
+    $seoTitle  = $seoTitle ?? 'VexaHost Build — Jasa Pembuatan Website UMKM Mulai Rp 499rb';
     $seoDesc   = $seoDesc ?? 'Jasa pembuatan website profesional untuk UMKM Indonesia bersama VexaHost. Landing Page, Company Profile, sampai Toko Online + Kasir POS. Mulai Rp 499.000, selesai 2-6 hari kerja.';
     $ogImage   = asset('images/og-image.png');
     $logoUrl   = asset('images/favicon-512x512.png');
     $waNumber  = '+6285808749131';
     $email     = 'vexahostcloudtech@gmail.com';
+    $seoRobots = $seoRobots ?? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+
+    // Alamat aplikasi induk. `@id` di bawah wajib sama persis dengan yang ditulis
+    // repo vexahost (url('/') . '#organization', tanpa garis miring) — beda satu
+    // karakter, relasi induk-anak tidak terbaca.
+    $vexahostUrl = rtrim(config('services.vexahost.url', 'https://vexahostcloud.my.id'), '/');
 
     $homeUrl = rtrim(route('home'), '/') . '/';
-    $orgId   = $homeUrl . '#organization';
-    $siteId  = $homeUrl . '#website';
+    $orgId   = rtrim($homeUrl, '/') . '#organization';
+    $siteId  = rtrim($homeUrl, '/') . '#website';
+
+    // Ukuran og:image dibaca dari berkasnya sendiri, seperti di WA Gateway:
+    // angka mati bisa diam-diam salah begitu gambarnya diganti, dan pratinjau
+    // tautan di WhatsApp jadi terpotong.
+    $ukuranGambar = @getimagesize(public_path('images/og-image.png')) ?: null;
 
     // Semua route (/, /company-profile, /vexahost) menampilkan konten yang sama,
     // jadi canonical selalu diarahkan ke beranda agar tidak dianggap duplikat.
@@ -39,7 +50,10 @@
             '@type' => 'ProfessionalService',
             '@id' => $orgId,
             'name' => $siteName,
-            'alternateName' => ['VexaHost Cloud', 'VexaHost Digital', 'vexahost'],
+            // Nama sengaja dibedakan dari induknya ("VexaHost"), sama seperti
+            // "VexaHost WA Gateway". Nama identik membuat Google menggabungkan
+            // atau menukar kedua entitas.
+            'alternateName' => ['VexaHost Jasa Website', 'Jasa Website VexaHost', 'VexaHost Web Development'],
             'url' => $homeUrl,
             'logo' => ['@type' => 'ImageObject', 'url' => $logoUrl, 'width' => 512, 'height' => 512],
             'image' => $ogImage,
@@ -54,7 +68,15 @@
             'address' => ['@type' => 'PostalAddress', 'addressCountry' => 'ID'],
             'areaServed' => ['@type' => 'Country', 'name' => 'Indonesia'],
             'knowsLanguage' => 'id-ID',
-            'sameAs' => ['https://vexahostcloud.my.id', 'https://wa.vexahostcloud.my.id'],
+            // Bukan `sameAs`: itu berarti "entitas yang sama", padahal situs induk
+            // dan WA Gateway adalah entitas berbeda. Relasi yang benar adalah
+            // parentOrganization, persis seperti yang dipakai WA Gateway.
+            'parentOrganization' => [
+                '@type' => 'Organization',
+                '@id' => $vexahostUrl . '#organization',
+                'name' => 'VexaHost',
+                'url' => $vexahostUrl,
+            ],
             'hasOfferCatalog' => [
                 '@type' => 'OfferCatalog',
                 'name' => 'Paket Pembuatan Website UMKM',
@@ -64,6 +86,7 @@
                     'description' => $p[1],
                     'price' => (string) $p[2],
                     'priceCurrency' => 'IDR',
+                    'priceValidUntil' => '2028-12-31',
                     'availability' => 'https://schema.org/InStock',
                     'url' => $homeUrl . '#harga',
                     'itemOffered' => [
@@ -80,7 +103,8 @@
                 'contactType' => 'customer service',
                 'telephone' => $waNumber,
                 'email' => $email,
-                'availableLanguage' => ['id'],
+                'areaServed' => 'ID',
+                'availableLanguage' => ['Indonesian', 'English'],
             ],
         ],
         [
@@ -91,6 +115,29 @@
             'description' => $seoDesc,
             'inLanguage' => 'id-ID',
             'publisher' => ['@id' => $orgId],
+        ],
+        [
+            // Padanan node Product (vexahost) dan SoftwareApplication (WA Gateway):
+            // rentang harga ringkas yang dibaca mesin pencari & AI Overview.
+            '@type' => 'Service',
+            '@id' => rtrim($homeUrl, '/') . '#service',
+            'name' => 'Jasa Pembuatan Website UMKM VexaHost',
+            'serviceType' => 'Jasa Pembuatan Website',
+            'image' => $ogImage,
+            'description' => 'Pembuatan landing page, company profile, toko online, dan sistem kasir POS berbasis web untuk UMKM Indonesia.',
+            'provider' => ['@id' => $orgId],
+            'brand' => ['@type' => 'Brand', 'name' => 'VexaHost'],
+            'areaServed' => ['@type' => 'Country', 'name' => 'Indonesia'],
+            'offers' => [
+                '@type' => 'AggregateOffer',
+                'priceCurrency' => 'IDR',
+                'lowPrice' => (string) collect($packages)->min(2),
+                'highPrice' => (string) collect($packages)->max(2),
+                'offerCount' => (string) count($packages),
+                'priceValidUntil' => '2028-12-31',
+                'availability' => 'https://schema.org/InStock',
+                'url' => $homeUrl . '#harga',
+            ],
         ],
         [
             '@type' => 'WebPage',
@@ -114,24 +161,47 @@
             ])->all(),
         ],
     ];
+
+    // Remah jejak, sama seperti dua repo lainnya. Halaman yang mengirim
+    // $breadcrumbs mendapat jalur navigasi di hasil pencarian; butir terakhir
+    // sengaja tanpa 'item' karena itu halaman yang sedang dibuka.
+    if (! empty($breadcrumbs ?? [])) {
+        $graph[] = [
+            '@type' => 'BreadcrumbList',
+            '@id' => $canonical . '#breadcrumb',
+            'itemListElement' => collect($breadcrumbs)->values()
+                ->map(fn (array $remah, int $i) => array_filter([
+                    '@type' => 'ListItem',
+                    'position' => $i + 1,
+                    'name' => $remah['name'],
+                    'item' => $remah['url'] ?? null,
+                ]))->all(),
+        ];
+    }
 @endphp
 
 {{-- ============ Primary SEO ============ --}}
 <title>{{ $seoTitle }}</title>
+<meta name="title" content="{{ $seoTitle }}">
 <meta name="description" content="{{ $seoDesc }}">
 <link rel="canonical" href="{{ $canonical }}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="author" content="{{ $siteName }}">
-<meta name="geo.region" content="ID">
+<meta name="robots" content="{{ $seoRobots }}">
+<meta name="googlebot" content="{{ $seoRobots }}">
+<meta name="author" content="VexaHost">
+
+{{-- ============ Geo Targeting (Pencarian Lokal Indonesia) ============ --}}
+<meta name="geo.region" content="ID-JK">
+<meta name="geo.placename" content="Jakarta, Indonesia">
+<meta name="geo.position" content="-6.2088;106.8456">
+<meta name="ICBM" content="-6.2088, 106.8456">
 <meta name="theme-color" content="#EA580C">
 <link rel="alternate" hreflang="id-ID" href="{{ $canonical }}">
 <link rel="alternate" hreflang="x-default" href="{{ $canonical }}">
 
 {{-- Verifikasi Google Search Console (opsional, hanya untuk metode "HTML tag").
      Isi GOOGLE_SITE_VERIFICATION di .env lalu jalankan: php artisan config:cache --}}
-@if (config('services.google_site_verification'))
-    <meta name="google-site-verification" content="{{ config('services.google_site_verification') }}">
+@if (config('services.google.site_verification'))
+    <meta name="google-site-verification" content="{{ config('services.google.site_verification') }}">
 @endif
 
 {{-- ============ Favicon & Brand Icons ============ --}}
@@ -154,12 +224,15 @@
 <meta property="og:image" content="{{ $ogImage }}">
 <meta property="og:image:secure_url" content="{{ $ogImage }}">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+@if ($ukuranGambar)
+<meta property="og:image:width" content="{{ $ukuranGambar[0] }}">
+<meta property="og:image:height" content="{{ $ukuranGambar[1] }}">
+@endif
 <meta property="og:image:alt" content="{{ $siteName }} — jasa pembuatan website profesional untuk UMKM Indonesia">
 
 {{-- ============ Twitter / X ============ --}}
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ $canonical }}">
 <meta name="twitter:title" content="{{ $seoTitle }}">
 <meta name="twitter:description" content="{{ $seoDesc }}">
 <meta name="twitter:image" content="{{ $ogImage }}">

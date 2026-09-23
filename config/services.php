@@ -36,6 +36,14 @@ return [
     ],
 
     // Kode verifikasi Google Search Console (metode "HTML tag").
-    'google_site_verification' => env('GOOGLE_SITE_VERIFICATION'),
+    // Kuncinya disamakan dengan repo vexahost & WA Gateway.
+    'google' => [
+        'site_verification' => env('GOOGLE_SITE_VERIFICATION'),
+    ],
+
+    // Situs induk, dirujuk sebagai parentOrganization di JSON-LD.
+    'vexahost' => [
+        'url' => env('VEXAHOST_URL', 'https://vexahostcloud.my.id'),
+    ],
 
 ];

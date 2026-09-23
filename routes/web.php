@@ -50,3 +50,10 @@ Route::get('/google1c7e1bac881571e0.html', function () {
     return response('google-site-verification: google1c7e1bac881571e0.html')
         ->header('Content-Type', 'text/html; charset=UTF-8');
 });
+
+// Token verifikasi akun Google yang sama dengan repo vexahost & WA Gateway,
+// supaya ketiga situs bisa dikelola dari satu akun Search Console.
+Route::get('/googlee05f1cf5ff4b4859.html', function () {
+    return response('google-site-verification: googlee05f1cf5ff4b4859.html')
+        ->header('Content-Type', 'text/html; charset=UTF-8');
+});

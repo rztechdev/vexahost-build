@@ -1,4 +1,4 @@
-<section id="hero" class="relative pt-32 pb-16 md:pt-40 md:pb-20 lg:pt-0 lg:pb-0 min-h-[680px] lg:min-h-[780px] xl:min-h-[820px] 2xl:min-h-[860px] bg-white dark:bg-zinc-950 text-[#2E2E2A] dark:text-zinc-100 overflow-hidden flex items-center transition-colors duration-300">
+<section id="hero" class="relative pt-20 sm:pt-28 lg:pt-0 pb-0 min-h-screen min-h-[100dvh] lg:min-h-[780px] xl:min-h-[820px] 2xl:min-h-[860px] bg-white dark:bg-zinc-950 text-[#2E2E2A] dark:text-zinc-100 overflow-hidden flex flex-col justify-between lg:justify-center lg:flex-row lg:items-center transition-colors duration-300">
     <!-- Grid Pattern Overlay -->
     <div class="absolute inset-0 bg-grid-pattern pointer-events-none opacity-60"></div>
 
@@ -7,13 +7,13 @@
         @include('landing.partials.hero-cosmic')
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-1 flex flex-col justify-between lg:justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center flex-1 flex flex-col justify-between lg:grid">
             
             <!-- Left Column: Copy & CTAs -->
-            <div class="lg:col-span-7 xl:col-span-7 flex flex-col items-start text-left pt-8 pb-12 sm:pt-12 sm:pb-16 lg:pt-32 lg:pb-20 xl:pt-40 xl:pb-24 w-full max-w-2xl lg:max-w-[620px] xl:max-w-3xl 2xl:max-w-4xl">
+            <div class="lg:col-span-7 xl:col-span-7 flex flex-col items-start text-left pt-2 pb-0 sm:pt-4 sm:pb-0 lg:pt-32 lg:pb-20 xl:pt-40 xl:pb-24 w-full max-w-2xl lg:max-w-[620px] xl:max-w-3xl 2xl:max-w-4xl">
                 <!-- Main Headline (efek mengetik / typewriter + kursor - ukuran besar & tebal megah) -->
-                <h1 id="rz-typewriter" class="relative font-fraunces text-[42px] sm:text-[54px] lg:text-[56px] xl:text-[66px] 2xl:text-[74px] font-black text-[#2E2E2A] dark:text-zinc-50 leading-[1.08] sm:leading-[1.05] lg:leading-[1.03] tracking-tight mt-2 sm:mt-4 mb-6 w-full max-w-2xl lg:max-w-[620px] xl:max-w-3xl 2xl:max-w-4xl">Website Profesional untuk UMKM, <span class="text-[#EA580C] dark:text-[#FB923C]">Harga Masuk Akal.</span></h1>
+                <h1 id="rz-typewriter" class="relative font-fraunces text-[42px] sm:text-[54px] lg:text-[56px] xl:text-[66px] 2xl:text-[74px] font-black text-[#2E2E2A] dark:text-zinc-50 leading-[1.08] sm:leading-[1.05] lg:leading-[1.03] tracking-tight mt-2 sm:mt-4 mb-6 w-full max-w-2xl lg:max-w-[620px] xl:max-w-3xl 2xl:max-w-4xl">Bikin Usaha Anda Lebih Dipercaya, <span class="text-[#EA580C] dark:text-[#FB923C]">Lewat Website Profesional.</span></h1>
                 <script>
                     (function () {
                         var h = document.getElementById('rz-typewriter');
@@ -129,6 +129,11 @@
             </div>
 
         </div>
+    </div>
+
+    <!-- Mobile Cosmic Wave Stage (< lg: Astronom, Teleskop, dan Antariksa Tampil Kaya & Penuh di Bawah Tombol) -->
+    <div class="lg:hidden w-full relative z-10 select-none pointer-events-none flex-1 min-h-[300px] max-h-[460px] flex items-end overflow-hidden">
+        @include('landing.partials.hero-cosmic-mobile')
     </div>
 </section>
 

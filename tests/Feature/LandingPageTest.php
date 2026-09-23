@@ -11,7 +11,7 @@ class LandingPageTest extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200);
-        $response->assertSee('VexaHost - Jasa Website');
+        $response->assertSee('VexaHost Build — Jasa Pembuatan Website UMKM', false);
         $response->assertSee('build.vexahostcloud.my.id');
     }
 
