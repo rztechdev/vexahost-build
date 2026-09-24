@@ -12,20 +12,15 @@
     --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
     
     /* VexaHost Brand Colors (Warm Premium Orange Spectrum) */
-    --color-rz-primary: #FB923C;
-    --color-rz-deep: #EA580C;
-    --color-rz-deep-hover: #C2410C;
-    --color-rz-cream: #FFFBF7;
-    --color-rz-cream-subtle: #FFF7ED;
-    --color-rz-charcoal: #2E2E2A;
-    --color-rz-charcoal-muted: #595952;
-    --color-rz-charcoal-dark: #22221E;
-
     --color-vh-primary: #FB923C;
     --color-vh-deep: #EA580C;
     --color-vh-deep-hover: #C2410C;
     --color-vh-cream: #FFFBF7;
     --color-vh-cream-subtle: #FFF7ED;
+    --color-vh-charcoal: #2E2E2A;
+    --color-vh-charcoal-muted: #595952;
+    --color-vh-charcoal-dark: #22221E;
+
 }
 
 [x-cloak] {
@@ -51,12 +46,12 @@ html.dark body {
    ========================================================================== */
 
 /* Folded-Corner Paper Ribbon Effect for Cards */
-.rz-fold-tr {
+.vh-fold-tr {
     position: relative;
     clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 0 100%);
 }
 
-.rz-fold-tr::before {
+.vh-fold-tr::before {
     content: '';
     position: absolute;
     top: 0;
@@ -70,17 +65,17 @@ html.dark body {
     z-index: 10;
 }
 
-.rz-fold-cream-tr {
+.vh-fold-cream-tr {
     --tw-fold-color: #FFEDD5;
 }
 
-.rz-fold-orange-tr,
-.rz-fold-sage-tr {
+.vh-fold-orange-tr,
+.vh-fold-sage-tr {
     --tw-fold-color: #C2410C;
 }
 
 /* Subtle Ribbon Float Animation for Hero & Visuals */
-@keyframes rz-ribbon-drift {
+@keyframes vh-ribbon-drift {
     0%, 100% {
         transform: translateY(0px) rotate(0deg);
     }
@@ -90,10 +85,10 @@ html.dark body {
 }
 
 .animate-ribbon-drift {
-    animation: rz-ribbon-drift 7s ease-in-out infinite;
+    animation: vh-ribbon-drift 7s ease-in-out infinite;
 }
 
-@keyframes rz-pulse-glow {
+@keyframes vh-pulse-glow {
     0%, 100% {
         opacity: 0.35;
         transform: scale(1);
@@ -105,11 +100,11 @@ html.dark body {
 }
 
 .animate-pulse-glow {
-    animation: rz-pulse-glow 5s ease-in-out infinite;
+    animation: vh-pulse-glow 5s ease-in-out infinite;
 }
 
 /* Accessible focus ring for interactive elements */
-.rz-focus-ring:focus-visible {
+.vh-focus-ring:focus-visible {
     outline: 2px solid #EA580C;
     outline-offset: 3px;
 }
@@ -118,11 +113,11 @@ html.dark body {
    SMOOTH & VARIED SCROLL REVEAL ANIMATIONS
    ========================================================================== */
 
-.rz-reveal-up,
-.rz-reveal-scale,
-.rz-reveal-left,
-.rz-reveal-right,
-.rz-reveal-tilt {
+.vh-reveal-up,
+.vh-reveal-scale,
+.vh-reveal-left,
+.vh-reveal-right,
+.vh-reveal-tilt {
     opacity: 0;
     transition-property: opacity, transform;
     transition-duration: 800ms;
@@ -130,40 +125,40 @@ html.dark body {
     will-change: opacity, transform;
 }
 
-.rz-reveal-up {
+.vh-reveal-up {
     transform: translateY(32px);
 }
 
-.rz-reveal-scale {
+.vh-reveal-scale {
     transform: translateY(20px) scale(0.92);
 }
 
-.rz-reveal-left {
+.vh-reveal-left {
     transform: translateX(-32px);
 }
 
-.rz-reveal-right {
+.vh-reveal-right {
     transform: translateX(32px);
 }
 
-.rz-reveal-tilt {
+.vh-reveal-tilt {
     transform: translateY(28px) rotate(-1.5deg);
 }
 
 /* Stagger delays for elegant sequencing */
-.rz-delay-1 { transition-delay: 80ms; }
-.rz-delay-2 { transition-delay: 160ms; }
-.rz-delay-3 { transition-delay: 240ms; }
-.rz-delay-4 { transition-delay: 320ms; }
-.rz-delay-5 { transition-delay: 400ms; }
+.vh-delay-1 { transition-delay: 80ms; }
+.vh-delay-2 { transition-delay: 160ms; }
+.vh-delay-3 { transition-delay: 240ms; }
+.vh-delay-4 { transition-delay: 320ms; }
+.vh-delay-5 { transition-delay: 400ms; }
 
 /* Active revealed state when in viewport */
-.rz-revealed.rz-reveal-up,
-.rz-revealed.rz-reveal-scale,
-.rz-revealed.rz-reveal-left,
-.rz-revealed.rz-reveal-right,
-.rz-revealed.rz-reveal-tilt,
-.rz-revealed {
+.vh-revealed.vh-reveal-up,
+.vh-revealed.vh-reveal-scale,
+.vh-revealed.vh-reveal-left,
+.vh-revealed.vh-reveal-right,
+.vh-revealed.vh-reveal-tilt,
+.vh-revealed {
     opacity: 1 !important;
     transform: translate(0, 0) scale(1) rotate(0deg);
 }
@@ -172,7 +167,7 @@ html.dark body {
    3D INTERACTIVE CARD SYSTEM (Cursor-tracking 3D Tilt & Glare)
    ========================================================================== */
 
-.rz-card-3d {
+.vh-card-3d {
     position: relative;
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -180,20 +175,20 @@ html.dark body {
     transition: transform 0.12s ease-out, box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
 }
 
-.rz-card-3d-reset {
+.vh-card-3d-reset {
     transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.3s ease !important;
 }
 
 /* Dynamic glare reflection overlay */
-.rz-card-3d::after {
+.vh-card-3d::after {
     content: '';
     position: absolute;
     inset: 0;
     pointer-events: none;
     border-radius: inherit;
-    opacity: var(--rz-glare-opacity, 0);
+    opacity: var(--vh-glare-opacity, 0);
     background: radial-gradient(
-        circle 260px at var(--rz-glare-x, 50%) var(--rz-glare-y, 50%),
+        circle 260px at var(--vh-glare-x, 50%) var(--vh-glare-y, 50%),
         rgba(255, 255, 255, 0.22),
         transparent 70%
     );
@@ -201,23 +196,23 @@ html.dark body {
     z-index: 20;
 }
 
-.dark .rz-card-3d::after {
+.dark .vh-card-3d::after {
     background: radial-gradient(
-        circle 280px at var(--rz-glare-x, 50%) var(--rz-glare-y, 50%),
+        circle 280px at var(--vh-glare-x, 50%) var(--vh-glare-y, 50%),
         rgba(255, 255, 255, 0.08),
         transparent 70%
     );
 }
 
 /* 3D Depth Layering on Card Hover */
-.rz-card-3d:hover {
+.vh-card-3d:hover {
     box-shadow: 
         0 20px 35px -10px rgba(46, 46, 42, 0.14),
         0 10px 20px -5px rgba(234, 88, 12, 0.18) !important;
     border-color: rgba(234, 88, 12, 0.5) !important;
 }
 
-.dark .rz-card-3d:hover {
+.dark .vh-card-3d:hover {
     box-shadow: 
         0 25px 45px -12px rgba(0, 0, 0, 0.75),
         0 0 25px rgba(234, 88, 12, 0.25) !important;
@@ -225,35 +220,35 @@ html.dark body {
 }
 
 /* 3D Pop for inner elements like icons & badges */
-.rz-card-3d .rz-3d-pop {
+.vh-card-3d .vh-3d-pop {
     transform: translateZ(24px);
     transform-style: preserve-3d;
 }
 
-.rz-card-3d .rz-3d-pop-sm {
+.vh-card-3d .vh-3d-pop-sm {
     transform: translateZ(12px);
     transform-style: preserve-3d;
 }
 
 /* Respect user's accessibility reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
-    .rz-reveal-up,
-    .rz-reveal-scale,
-    .rz-reveal-left,
-    .rz-reveal-right,
-    .rz-reveal-tilt {
+    .vh-reveal-up,
+    .vh-reveal-scale,
+    .vh-reveal-left,
+    .vh-reveal-right,
+    .vh-reveal-tilt {
         opacity: 1 !important;
         transform: none !important;
         transition: none !important;
     }
 
-    .rz-card-3d {
+    .vh-card-3d {
         transform: none !important;
         transition: none !important;
     }
 }
 
-/* Background Grid Pattern (Elemen Kotak-Kotak Netral Bersih - Matching rz - portal-client) */
+/* Background Grid Pattern (Elemen Kotak-Kotak Netral Bersih) */
 .bg-grid-pattern {
     background-size: 40px 40px;
     background-image: 

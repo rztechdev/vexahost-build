@@ -5,7 +5,7 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <!-- Section Header -->
-        <div class="rz-reveal-up text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+        <div class="vh-reveal-up text-center max-w-3xl mx-auto mb-10 sm:mb-14">
             <h2 class="font-fraunces text-2xl sm:text-3xl font-extrabold text-[#2E2E2A] dark:text-zinc-50 tracking-tight leading-tight">
                 Pertanyaan yang Sering Diajukan
             </h2>
@@ -18,10 +18,10 @@
         <div class="space-y-3 sm:space-y-4">
             
             <!-- Item 1 -->
-            <div class="rz-reveal-up rz-delay-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
+            <div class="vh-reveal-up vh-delay-1 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 1 ? null : 1)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] vh-focus-ring"
                     :aria-expanded="active === 1"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">
@@ -46,10 +46,10 @@
             </div>
 
             <!-- Item 2 -->
-            <div class="rz-reveal-up rz-delay-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
+            <div class="vh-reveal-up vh-delay-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 2 ? null : 2)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] vh-focus-ring"
                     :aria-expanded="active === 2"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">
@@ -74,10 +74,10 @@
             </div>
 
             <!-- Item 3 -->
-            <div class="rz-reveal-up rz-delay-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
+            <div class="vh-reveal-up vh-delay-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 3 ? null : 3)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] vh-focus-ring"
                     :aria-expanded="active === 3"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">
@@ -102,10 +102,10 @@
             </div>
 
             <!-- Item 4 -->
-            <div class="rz-reveal-up rz-delay-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
+            <div class="vh-reveal-up vh-delay-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 4 ? null : 4)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] vh-focus-ring"
                     :aria-expanded="active === 4"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">
@@ -130,10 +130,10 @@
             </div>
 
             <!-- Item 5 -->
-            <div class="rz-reveal-up rz-delay-5 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
+            <div class="vh-reveal-up vh-delay-5 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xs hover:border-[#EA580C]/50 transition-all duration-200">
                 <button 
                     @click="active = (active === 5 ? null : 5)"
-                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] rz-focus-ring"
+                    class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EA580C] vh-focus-ring"
                     :aria-expanded="active === 5"
                 >
                     <span class="font-fraunces text-sm sm:text-base font-semibold text-[#2E2E2A] dark:text-zinc-100">

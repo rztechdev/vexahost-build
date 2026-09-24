@@ -16,7 +16,7 @@
                     Solusi terpercaya pembuatan website, cloud hosting, dan transformasi digital. Membantu UMKM & bisnis tampil profesional secara instan dan berkelanjutan.
                 </p>
                 <div class="space-y-1 text-xs text-zinc-500 dark:text-zinc-400 pt-1">
-                    <p class="text-zinc-500 dark:text-zinc-400 font-normal">Created by <span class="text-zinc-800 dark:text-zinc-200 font-semibold">RZ Digital Creative</span></p>
+                    <p class="text-zinc-500 dark:text-zinc-400 font-normal">Created by <span class="text-zinc-800 dark:text-zinc-200 font-semibold">vexahostcloud</span></p>
                     <p>Infrastruktur: Tencent Cloud &amp; Lintasarta Cloudeka (Jakarta &amp; Singapore)</p>
                 </div>
                 
@@ -160,7 +160,7 @@
         <!-- Bottom Copyright Row -->
         <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400 text-center sm:text-left">
             <div>
-                &copy; {{ date('Y') }} VexaHost. All rights reserved. Created by RZ Digital Creative.
+                &copy; {{ date('Y') }} VexaHost. All rights reserved. Created by vexahostcloud.
             </div>
             <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 font-mono text-[11px]">
                 <a href="https://build.vexahostcloud.my.id" class="text-zinc-600 dark:text-zinc-400 hover:text-[#EA580C] dark:hover:text-[#FB923C] transition-colors font-medium">build.vexahostcloud.my.id</a>

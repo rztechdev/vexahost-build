@@ -66,7 +66,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <!-- Section Header -->
-        <div class="rz-reveal-up text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+        <div class="vh-reveal-up text-center max-w-3xl mx-auto mb-10 sm:mb-14">
             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FB923C]/15 text-[#EA580C] dark:text-[#FB923C] text-[11px] font-bold uppercase tracking-wider mb-3">
                 <span class="material-symbols-outlined text-[14px]">favorite</span>
                 Kata Mereka
@@ -82,7 +82,7 @@
         <!-- Testimonials Grid (mobile: 2 kolom kiri-kanan) -->
         <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             @foreach($testimonials as $i => $t)
-                <div class="rz-reveal-up rz-delay-{{ ($i % 3) + 1 }} rz-card-3d bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-4 sm:p-7 shadow-sm flex flex-col">
+                <div class="vh-reveal-up vh-delay-{{ ($i % 3) + 1 }} vh-card-3d bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-4 sm:p-7 shadow-sm flex flex-col">
 
                     <!-- Rating -->
                     <div class="flex items-center gap-0.5 mb-2.5 sm:mb-4 text-amber-400">
@@ -122,9 +122,9 @@
         </div>
 
         <!-- Write a Review CTA -->
-        <div class="rz-reveal-up text-center mt-10 sm:mt-14">
+        <div class="vh-reveal-up text-center mt-10 sm:mt-14">
             <a href="{{ $reviewWaUrl }}" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#EA580C] to-[#FB923C] hover:from-[#C2410C] hover:to-[#EA580C] text-white text-sm font-bold shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 rz-focus-ring">
+               class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#EA580C] to-[#FB923C] hover:from-[#C2410C] hover:to-[#EA580C] text-white text-sm font-bold shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 vh-focus-ring">
                 Tulis review kamu
                 <span class="material-symbols-outlined text-[18px]">rate_review</span>
             </a>

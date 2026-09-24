@@ -12,7 +12,7 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <!-- Big CTA Card with Smooth Scale Entrance -->
-        <div class="rz-reveal-scale rz-card-3d bg-white dark:bg-zinc-900 rounded-3xl p-6 sm:p-10 border border-zinc-200 dark:border-zinc-800 shadow-xl text-center relative">
+        <div class="vh-reveal-scale vh-card-3d bg-white dark:bg-zinc-900 rounded-3xl p-6 sm:p-10 border border-zinc-200 dark:border-zinc-800 shadow-xl text-center relative">
             
             <h2 class="font-fraunces text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#2E2E2A] dark:text-zinc-50 leading-tight tracking-tight max-w-2xl mx-auto mb-4">
                 Siap Membawa Usaha Anda Tampil Profesional & Online?
@@ -28,7 +28,7 @@
                     href="https://wa.me/6285808749131?text=Halo%20VexaHost,%20saya%20siap%20konsultasi%20pembuatan%20website%20untuk%20usaha%20saya.%20Boleh%20bantu%20jelaskan%20langkah%20awalnya?"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white text-xs sm:text-sm font-bold shadow-md shadow-[#EA580C]/30 hover:shadow-lg transition-all duration-200 active:scale-95 group rz-focus-ring"
+                    class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white text-xs sm:text-sm font-bold shadow-md shadow-[#EA580C]/30 hover:shadow-lg transition-all duration-200 active:scale-95 group vh-focus-ring"
                 >
                     <!-- WhatsApp SVG -->
                     <svg class="w-5 h-5 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24">

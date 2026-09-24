@@ -5,7 +5,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <!-- Section Header -->
-        <div class="rz-reveal-up text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+        <div class="vh-reveal-up text-center max-w-3xl mx-auto mb-10 sm:mb-14">
             <h2 class="font-fraunces text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#2E2E2A] dark:text-zinc-50 tracking-tight leading-tight">
                 Kenapa Usaha Anda Butuh Website?
             </h2>
@@ -15,7 +15,7 @@
         </div>
 
         <!-- Editorial Stat & Problem Showcase (Non-Card Layout: Open Hairline Grid) -->
-        <div class="rz-reveal-up border-y border-zinc-200 dark:border-zinc-800">
+        <div class="vh-reveal-up border-y border-zinc-200 dark:border-zinc-800">
             <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-zinc-200 dark:divide-zinc-800">
                 
                 <!-- Column 1: Tahap Pencarian -->
@@ -151,7 +151,7 @@
         </div>
 
         <!-- Sleek Bottom Takeaway Banner (Non-Card strip) -->
-        <div class="rz-reveal-up mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 py-3.5 px-4 sm:px-6 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 text-xs text-[#595952] dark:text-zinc-400">
+        <div class="vh-reveal-up mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 py-3.5 px-4 sm:px-6 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 text-xs text-[#595952] dark:text-zinc-400">
             <div class="flex items-center gap-3">
                 <span class="flex h-2 w-2 relative shrink-0">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EA580C] opacity-75"></span>

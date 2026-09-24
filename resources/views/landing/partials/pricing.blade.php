@@ -5,7 +5,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <!-- Section Header -->
-        <div class="rz-reveal-up text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div class="vh-reveal-up text-center max-w-3xl mx-auto mb-12 sm:mb-16">
             <h2 class="font-fraunces text-2xl sm:text-3xl font-extrabold text-[#2E2E2A] dark:text-zinc-50 tracking-tight leading-tight">
                 Pilihan Paket Investasi Usaha Anda
             </h2>
@@ -18,14 +18,14 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch pt-4">
             
             <!-- Card 1: Landing Page -->
-            <div class="rz-reveal-left rz-delay-1 rz-card-3d bg-white dark:bg-zinc-900 rounded-3xl p-6 sm:p-8 border border-zinc-200 dark:border-zinc-800 shadow-sm transition-all duration-300 flex flex-col justify-between">
+            <div class="vh-reveal-left vh-delay-1 vh-card-3d bg-white dark:bg-zinc-900 rounded-3xl p-6 sm:p-8 border border-zinc-200 dark:border-zinc-800 shadow-sm transition-all duration-300 flex flex-col justify-between">
                 <div>
                     <!-- Package Title & Badge -->
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="font-fraunces text-lg sm:text-xl font-bold text-[#2E2E2A] dark:text-zinc-100">
                             Landing Page
                         </h3>
-                        <span class="px-2.5 py-0.5 rounded-full bg-[#FB923C]/20 dark:bg-[#FB923C]/15 text-[#EA580C] dark:text-[#FB923C] font-mono text-[11px] font-bold rz-3d-pop-sm">
+                        <span class="px-2.5 py-0.5 rounded-full bg-[#FB923C]/20 dark:bg-[#FB923C]/15 text-[#EA580C] dark:text-[#FB923C] font-mono text-[11px] font-bold vh-3d-pop-sm">
                             Starter
                         </span>
                     </div>
@@ -48,7 +48,7 @@
                             href="https://wa.me/6285808749131?text=Halo%20VexaHost,%20saya%20tertarik%20dengan%20paket%20Landing%20Page%20(Rp499rb)"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="w-full flex items-center justify-center gap-2 py-3 px-5 rounded-full bg-[#FB923C]/20 dark:bg-[#FB923C]/15 hover:bg-[#EA580C] text-[#EA580C] dark:text-[#FB923C] hover:text-white font-bold text-xs sm:text-sm transition-all duration-200 active:scale-95 rz-focus-ring shadow-2xs"
+                            class="w-full flex items-center justify-center gap-2 py-3 px-5 rounded-full bg-[#FB923C]/20 dark:bg-[#FB923C]/15 hover:bg-[#EA580C] text-[#EA580C] dark:text-[#FB923C] hover:text-white font-bold text-xs sm:text-sm transition-all duration-200 active:scale-95 vh-focus-ring shadow-2xs"
                         >
                             <span>Pilih Paket Ini</span>
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,9 +88,9 @@
             </div>
 
             <!-- Card 2: Company Profile (HIGHLIGHTED / PALING LAKU) -->
-            <div class="rz-reveal-scale rz-delay-2 rz-card-3d bg-[#2E2E2A] dark:bg-zinc-900 text-[#F9F8F3] dark:text-zinc-100 rounded-3xl p-6 sm:p-8 border-2 border-[#EA580C] shadow-2xl transition-all duration-300 flex flex-col justify-between relative lg:-translate-y-3">
+            <div class="vh-reveal-scale vh-delay-2 vh-card-3d bg-[#2E2E2A] dark:bg-zinc-900 text-[#F9F8F3] dark:text-zinc-100 rounded-3xl p-6 sm:p-8 border-2 border-[#EA580C] shadow-2xl transition-all duration-300 flex flex-col justify-between relative lg:-translate-y-3">
                 <!-- Highlight Badge -->
-                <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#EA580C] text-white text-[11px] font-mono font-bold px-3.5 py-1 rounded-full shadow-md tracking-wider uppercase border border-[#FB923C] z-20 whitespace-nowrap rz-3d-pop-sm">
+                <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#EA580C] text-white text-[11px] font-mono font-bold px-3.5 py-1 rounded-full shadow-md tracking-wider uppercase border border-[#FB923C] z-20 whitespace-nowrap vh-3d-pop-sm">
                     <svg class="inline-block w-3 h-3 mr-1 -mt-px" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.958a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.367 2.446a1 1 0 00-.364 1.118l1.286 3.958c.3.922-.755 1.688-1.54 1.118l-3.366-2.446a1 1 0 00-1.175 0l-3.366 2.446c-.784.57-1.838-.196-1.539-1.118l1.286-3.958a1 1 0 00-.363-1.118L2.98 9.385c-.783-.57-.38-1.81.588-1.81h4.161a1 1 0 00.951-.69l1.286-3.958z"/></svg>Paling Favorit
                 </div>
 
@@ -100,7 +100,7 @@
                         <h3 class="font-fraunces text-lg sm:text-xl font-bold text-[#F9F8F3] dark:text-zinc-100">
                             Company Profile
                         </h3>
-                        <span class="px-2.5 py-0.5 rounded-full bg-[#EA580C] text-white font-mono text-[11px] font-bold rz-3d-pop-sm">
+                        <span class="px-2.5 py-0.5 rounded-full bg-[#EA580C] text-white font-mono text-[11px] font-bold vh-3d-pop-sm">
                             Branding
                         </span>
                     </div>
@@ -123,7 +123,7 @@
                             href="https://wa.me/6285808749131?text=Halo%20VexaHost,%20saya%20tertarik%20dengan%20paket%20Company%20Profile%20(Rp999rb)"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white font-bold text-xs sm:text-sm shadow-md transition-all duration-200 active:scale-95 rz-focus-ring"
+                            class="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white font-bold text-xs sm:text-sm shadow-md transition-all duration-200 active:scale-95 vh-focus-ring"
                         >
                             <span>Pilih Paket Terpopuler Ini</span>
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -169,14 +169,14 @@
             </div>
 
             <!-- Card 3: Toko Online & Kasir POS -->
-            <div class="rz-reveal-right rz-delay-3 rz-card-3d bg-white dark:bg-zinc-900 rounded-3xl p-6 sm:p-8 border border-zinc-200 dark:border-zinc-800 shadow-sm transition-all duration-300 flex flex-col justify-between">
+            <div class="vh-reveal-right vh-delay-3 vh-card-3d bg-white dark:bg-zinc-900 rounded-3xl p-6 sm:p-8 border border-zinc-200 dark:border-zinc-800 shadow-sm transition-all duration-300 flex flex-col justify-between">
                 <div>
                     <!-- Package Title & Badge -->
                     <div class="flex items-center justify-between mb-3">
                         <h3 class="font-fraunces text-lg sm:text-xl font-bold text-[#2E2E2A] dark:text-zinc-100">
                             Toko & Kasir POS
                         </h3>
-                        <span class="px-2.5 py-0.5 rounded-full bg-[#EA580C]/15 dark:bg-[#EA580C]/25 text-[#EA580C] dark:text-[#FB923C] font-mono text-[11px] font-bold rz-3d-pop-sm">
+                        <span class="px-2.5 py-0.5 rounded-full bg-[#EA580C]/15 dark:bg-[#EA580C]/25 text-[#EA580C] dark:text-[#FB923C] font-mono text-[11px] font-bold vh-3d-pop-sm">
                             All-in-One
                         </span>
                     </div>
@@ -199,7 +199,7 @@
                             href="https://wa.me/6285808749131?text=Halo%20VexaHost,%20saya%20mau%20konsultasi%20paket%20Toko%20Online%20%26%20Kasir%20POS%20(Rp1.5%20Juta)"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white font-bold text-xs sm:text-sm shadow-sm transition-all duration-200 active:scale-95 rz-focus-ring"
+                            class="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white font-bold text-xs sm:text-sm shadow-sm transition-all duration-200 active:scale-95 vh-focus-ring"
                         >
                             <span>Pilih Paket Ini</span>
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -257,7 +257,7 @@
         </div>
 
         <!-- Layanan Tambahan (Add-ons) Compact Block -->
-        <div class="rz-reveal-up rz-delay-2 mt-14 pt-10 border-t border-zinc-200 dark:border-zinc-800 max-w-5xl mx-auto">
+        <div class="vh-reveal-up vh-delay-2 mt-14 pt-10 border-t border-zinc-200 dark:border-zinc-800 max-w-5xl mx-auto">
             <div class="text-center mb-6">
                 <h3 class="font-fraunces text-xl sm:text-2xl font-bold text-[#2E2E2A] dark:text-zinc-100">
                     Butuh Lebih? Ada Layanan Tambahan

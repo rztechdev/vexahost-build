@@ -102,14 +102,14 @@
     <!-- Scroll Reveal Observer Script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const revealSelector = '.rz-reveal-up, .rz-reveal-scale, .rz-reveal-left, .rz-reveal-right, .rz-reveal-tilt';
+            const revealSelector = '.vh-reveal-up, .vh-reveal-scale, .vh-reveal-left, .vh-reveal-right, .vh-reveal-tilt';
             const revealElements = document.querySelectorAll(revealSelector);
             
             if ('IntersectionObserver' in window) {
                 const observer = new IntersectionObserver((entries, obs) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            entry.target.classList.add('rz-revealed');
+                            entry.target.classList.add('vh-revealed');
                             obs.unobserve(entry.target);
                         }
                     });
@@ -121,7 +121,7 @@
 
                 revealElements.forEach(el => observer.observe(el));
             } else {
-                revealElements.forEach(el => el.classList.add('rz-revealed'));
+                revealElements.forEach(el => el.classList.add('vh-revealed'));
             }
         });
     </script>

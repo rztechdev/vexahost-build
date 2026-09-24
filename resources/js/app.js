@@ -42,7 +42,7 @@ Alpine.start();
 function init3DCardTilt() {
     if (!window.matchMedia('(pointer: fine)').matches) return;
 
-    const cards = document.querySelectorAll('.rz-card-3d');
+    const cards = document.querySelectorAll('.vh-card-3d');
 
     cards.forEach(card => {
         let bounds = null;
@@ -54,8 +54,8 @@ function init3DCardTilt() {
 
         const onPointerEnter = () => {
             updateBounds();
-            card.classList.remove('rz-card-3d-reset');
-            card.style.setProperty('--rz-glare-opacity', '1');
+            card.classList.remove('vh-card-3d-reset');
+            card.style.setProperty('--vh-glare-opacity', '1');
         };
 
         const onPointerMove = (e) => {
@@ -76,17 +76,17 @@ function init3DCardTilt() {
 
             rafId = requestAnimationFrame(() => {
                 card.style.transform = `perspective(1000px) rotateX(${rotX.toFixed(2)}deg) rotateY(${rotY.toFixed(2)}deg) scale3d(1.02, 1.02, 1.02)`;
-                card.style.setProperty('--rz-glare-x', `${(mouseX / bounds.width * 100).toFixed(1)}%`);
-                card.style.setProperty('--rz-glare-y', `${(mouseY / bounds.height * 100).toFixed(1)}%`);
+                card.style.setProperty('--vh-glare-x', `${(mouseX / bounds.width * 100).toFixed(1)}%`);
+                card.style.setProperty('--vh-glare-y', `${(mouseY / bounds.height * 100).toFixed(1)}%`);
             });
         };
 
         const onPointerLeave = () => {
             if (rafId) cancelAnimationFrame(rafId);
             bounds = null;
-            card.classList.add('rz-card-3d-reset');
+            card.classList.add('vh-card-3d-reset');
             card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
-            card.style.setProperty('--rz-glare-opacity', '0');
+            card.style.setProperty('--vh-glare-opacity', '0');
         };
 
         card.addEventListener('pointerenter', onPointerEnter);

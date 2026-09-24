@@ -40,7 +40,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <!-- Section Header -->
-        <div class="rz-reveal-up max-w-3xl mb-8 sm:mb-12">
+        <div class="vh-reveal-up max-w-3xl mb-8 sm:mb-12">
             <h2 class="font-fraunces text-2xl sm:text-3xl font-extrabold text-[#2E2E2A] dark:text-zinc-50 tracking-tight leading-tight">
                 Layanan Pembuatan Website
             </h2>
@@ -49,7 +49,7 @@
             </p>
         </div>
 
-        <div x-data="{ tab: 0 }" class="rz-reveal-up">
+        <div x-data="{ tab: 0 }" class="vh-reveal-up">
 
             <!-- MOBILE: tab garis-bawah (tanpa scroll) -->
             <div class="lg:hidden grid grid-cols-3 border-b border-zinc-200 dark:border-zinc-800 mb-7">
@@ -98,7 +98,7 @@
                 <div class="lg:col-span-8 lg:pl-2">
                     @foreach($services as $i => $s)
                         <div x-show="tab === {{ $i }}"
-                             class="rz-svc-panel"
+                             class="vh-svc-panel"
                              @if(!$loop->first) style="display:none" @endif>
 
                             <div class="flex items-center gap-4 mb-6">
@@ -133,7 +133,7 @@
 
                             <div class="mt-8">
                                 <a href="#paket-harga"
-                                   class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white font-bold text-sm shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 rz-focus-ring">
+                                   class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white font-bold text-sm shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 vh-focus-ring">
                                     {{ $s['cta'] }}
                                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M5 12h13"/></svg>
                                 </a>
@@ -148,9 +148,9 @@
 </section>
 
 <style>
-    @keyframes rz-svc-in {
+    @keyframes vh-svc-in {
         from { opacity: 0; transform: translateY(6px); }
         to   { opacity: 1; transform: none; }
     }
-    #layanan .rz-svc-panel { animation: rz-svc-in 0.25s ease both; }
+    #layanan .vh-svc-panel { animation: vh-svc-in 0.25s ease both; }
 </style>

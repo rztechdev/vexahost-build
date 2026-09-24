@@ -110,7 +110,7 @@
                     href="https://wa.me/6285808749131?text=Halo%20VexaHost,%20saya%20tertarik%20untuk%20konsultasi%20pembuatan%20website%20untuk%20usaha%20saya."
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white text-xs lg:text-sm font-semibold shadow-xs hover:shadow-md transition-all duration-200 active:scale-95 group rz-focus-ring shrink-0"
+                    class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white text-xs lg:text-sm font-semibold shadow-xs hover:shadow-md transition-all duration-200 active:scale-95 group vh-focus-ring shrink-0"
                 >
                     <span>Konsultasi Gratis</span>
                     <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
